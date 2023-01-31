@@ -14,6 +14,8 @@
 		<input type = "button" id="submitButton" onClick="getWeather()" value = "Submit"><br>
         <br><div id="fourth"></div>
 		<div id="sixth"></div>
+		<div id="nineth"></div>
+		<div id="tenth"></div>
 		<div id="second"></div>
 		<div id="first"></div>
 		<div id="third"></div>
@@ -56,6 +58,8 @@ fetch('https://us-weather-by-zip-code.p.rapidapi.com/getweatherzipcode?zip=' + z
 		document.getElementById("sixth").innerHTML = "State: " + data.State;
 		document.getElementById("seventh").innerHTML = "Time of Sunrise: " + data.Sunrise;
 		document.getElementById("eighth").innerHTML = "Time of Sunset: " + data.Sunset;
+		document.getElementById("nineth").innerHTML = "Temperature (F): " + data.TempF;
+		document.getElementById("tenth").innerHTML = "Temperature (C): " + data.TempC;
 
 	})
 	.catch(function(error) {
